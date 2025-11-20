@@ -7,22 +7,62 @@
     body {
       font-family: sans-serif;
       background-color: #111;
-      color: #ff0;
+      color: #fff;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       margin: 0;
+      padding: 1rem;
     }
-    h1 { margin-bottom: 1rem; }
-    a { color: #0ff; text-decoration: none; margin-top: 1rem; }
-    a:hover { color: #ff0; }
+
+    .info-card {
+      background-color: #222;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #0ff;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: #f0f;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+      margin-top: 1rem;
+    }
+
+    .home-button:hover {
+      background-color: #0ff;
+      color: #111;
+    }
   </style>
 </head>
 <body>
-  <h1>Info</h1>
-  <p>This is the Info subdomain.</p>
-  <a href="https://sk4lidos.com">Back to home</a>
+  <div class="info-card">
+    <h1>About Me</h1>
+    <p>Hi! My name is Shayla Berri Katze.</p>
+    <p>I’m trans and I love creating art and projects online.</p>
+    <p>You can find my work across different projects and my art gallery here on sk4lidos.com.</p>
+
+    <a href="https://sk4lidos.com" class="home-button">Return to Home</a>
+  </div>
 </body>
 </html>
